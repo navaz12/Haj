@@ -1081,7 +1081,7 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(https://c4.wallpaperflare.com/wallpaper/320/483/815/islam-muslim-praying-kaaba-wallpaper-preview.jpg) center center no-repeat;
+  background: url("https://c4.wallpaperflare.com/wallpaper/320/483/815/islam-muslim-praying-kaaba-wallpaper-preview.jpg") center center no-repeat;
   background-size: cover;
   position: relative;
 }
