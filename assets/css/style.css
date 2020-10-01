@@ -1211,7 +1211,7 @@ section {
   margin-top: 25px;
 }
 
-.book-a-table .php-email-form .sent-message {
+.book-a-table .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1220,13 +1220,13 @@ section {
   font-weight: 600;
 }
 
-.book-a-table .php-email-form .loading {
+.book-a-table .loading {
   display: none;
   text-align: center;
   padding: 15px;
 }
 
-.book-a-table .php-email-form .loading:before {
+.book-a-table .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1239,7 +1239,7 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.book-a-table .php-email-form input, .book-a-table .php-email-form textarea {
+.book-a-table input, .book-a-table textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
