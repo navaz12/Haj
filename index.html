@@ -605,7 +605,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="https://script.google.com/macros/s/AKfycbxvKY4fdfLMJrqecV5vFlBSlTaLDJ0uMbQzecLv/exec" method="post" role="form" class="php-email-form">
+            <form id="form" action="https://script.google.com/macros/s/AKfycbxvKY4fdfLMJrqecV5vFlBSlTaLDJ0uMbQzecLv/exec" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -631,7 +631,25 @@
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-
+            <script>
+        $("#form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwX2Pue09CopU9HQ01P7mTuAuPZ9FrdYZH4LDtyO-Vvw79y3m0/exec",
+                data:$("#gform").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
           </div>
 
         </div>
