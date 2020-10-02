@@ -272,7 +272,7 @@
           <p>Book a Table</p>
         </div>
 
-        <form action="" method="post" role="form" data-aos="fade-up" data-aos-delay="100">
+        <form action="" method="post" id="gform" role="form" data-aos="fade-up" data-aos-delay="100">
           <div class="form-row">
             <div class="col-lg-4 col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -308,11 +308,11 @@
           <div class="text-center"><button type="submit">Book my seat</button></div>
         </form>
         <script>
-        $("#submit-form").submit((e)=>{
+        $("#gform").submit((e)=>{
             e.preventDefault()
             $.ajax({
                 url:"https://script.google.com/macros/s/AKfycbwX2Pue09CopU9HQ01P7mTuAuPZ9FrdYZH4LDtyO-Vvw79y3m0/exec",
-                data:$("#submit-form").serialize(),
+                data:$("#gform").serialize(),
                 method:"post",
                 success:function (response){
                     alert("Form submitted successfully")
